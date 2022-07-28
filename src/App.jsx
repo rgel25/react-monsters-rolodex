@@ -11,10 +11,8 @@ class App extends Component {
       monsters: [],
       searchField: "",
     };
-    console.log("consturctor");
   }
   componentDidMount() {
-    console.log("componentDidMount");
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((users) => this.setState(() => ({ monsters: users })));
@@ -26,7 +24,6 @@ class App extends Component {
     });
   };
   render() {
-    console.log("render");
     const { monsters, searchField } = this.state;
     const { handleChange } = this;
     const filteredMonsters = monsters.filter((monster) =>
