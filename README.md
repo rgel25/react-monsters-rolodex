@@ -1,12 +1,12 @@
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
-This is a simple react application where I used class components instead of functional components which is what I'm used to.
+This is a simple react application where I used class components instead of functional components which is what I'm used to. Also used TypeScript for this project.
 
 ## Technologies used
 
+- TypeScript
 - React
-- JS
 - HTML
 - CSS/SASS
 - VSCode

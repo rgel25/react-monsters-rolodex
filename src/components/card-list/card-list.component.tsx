@@ -2,7 +2,14 @@ import { Component } from "react";
 import Card from "../card/card.component";
 import "./card-list.styles.css";
 
-class CardList extends Component {
+import { Monster } from "../../App";
+
+interface IProps {
+  monsters: Monster[];
+}
+interface IState {}
+
+class CardList extends Component<IProps, IState> {
   render() {
     const { monsters } = this.props;
     return (

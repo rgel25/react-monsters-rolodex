@@ -1,7 +1,13 @@
-import { Component } from "react";
+import { Component, ChangeEvent } from "react";
 import "./search-box.styles.css";
 
-export default class SearchBox extends Component {
+type Props = {
+  className: string;
+  placeholder?: string;
+  onChangeHandler: (event: ChangeEvent<HTMLInputElement>) => void;
+};
+
+export default class SearchBox extends Component<Props> {
   render() {
     return (
       <div>

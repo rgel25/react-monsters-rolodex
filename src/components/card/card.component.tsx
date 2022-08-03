@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import "./card.styles.css";
 
-export default class Card extends Component {
+import { Monster } from "../../App";
+
+interface IProps {
+  monster: Monster;
+}
+interface IState {}
+
+export default class Card extends Component<IProps, IState> {
   render() {
     const { name, email, id } = this.props.monster;
     return (
